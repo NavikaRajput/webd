@@ -1,2 +1,2 @@
 # webd
-This a repository containing demo mail server files.
+This is a mail server repository.
