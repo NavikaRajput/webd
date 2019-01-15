@@ -1,0 +1,35 @@
+	<HTML>
+	<HEAD>
+	<Script Language="JavaScript">
+	function f1()
+	{
+	if(document.f.t1.value=="")
+	{
+	alert("plz enter ur name");
+	}
+	else if(document.f.t2.value=="")
+	{
+	alert("plz enter ur password");
+	}
+	else
+	{
+	document.f.submit();
+	}
+	}
+	</Script>
+	</HEAD>
+	<BODY leftmargin=0 topmargin=0 bgColor="black" link="lime">
+	<table width=100%>
+	<td><img src="banner.jpg"></td>
+	</table>
+	<form name="f" method="post" action="http://localhost:8080/examples/servlets/servlet/Login">
+	<table>
+	<td><font face="comic sans ms" color="yellow">Enter ur 	user id: </td><td> <Input type="text" name="t1" 	size=30></td><tr>
+	<td><font face="comic sans ms" color="yellow">Enter ur 	password: </td><td>  <Input type="password" name="t2" 	size=30></td><tr><tr>
+	<td></td><td><Input type="button" value="Submit form" 	OnClick="f1()"></td><tr>
+	<td></td><td><font face="comic sans ms" 	color="yellow"><a href="forgot.html">Forgot Your 	password...?<a></td><tr>
+	<td></td><td><font face="comic sans ms" 	color="yellow"><a href="http://localhost:8080/examples/servlets/newUser.html">New 	User...?</a></td>
+	</table>
+	</form>
+	</BODY>
+	</HTML>

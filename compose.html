@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<Script Language="JavaScript">
+function f1()
+{
+if(document.f.t1.value=="")
+{
+alert("Please enter the user id");
+}
+else if(document.f.t2.value=="")
+{
+alert("plz enter the subject");
+}
+else
+{
+document.f.submit();
+}
+}
+</Script>
+</HEAD>
+<BODY leftmargin=0 topmargin=0 bgColor="black">
+<table  width=100%>
+<td><img src="banner.jpg"></td>
+</table>
+<FORM NAME="f" method="post" ACTION="http://localhost:8080/examples/servlets/servlet/Compose">
+<Center><TABLE>
+<td><font face="comic sans ms" color="yellow">To: </td><td> <Input type="text" name="t1" size=60><br></td>
+<TR>
+<td><font face="comic sans ms" color="yellow">Subject: </td><td> <Input type="text" name="t2" size=60><br></td><TR>
+<td></td><td><textarea cols=45 rows=10 name="t3"></textArea></td>
+<TR>
+<td></td><td><Input type="button" value="Send" OnClick="f1()"><center><a href="http://localhost:8080/examples/servlets/valid.html">Back to main</a></center></td>
+</TABLE></Center>
+</FORM>
+</BODY>
+</HTML>
